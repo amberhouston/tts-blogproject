@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <title>Blog Site</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <!-- This goes right before our closing head tag -->
+  <link href="../../webjars/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div th:replace="fragments/navbar :: navbar"></div>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-xl">
+        <h3>This post has been deleted.</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md">
+        <a href="/">
+          <button class="btn btn-primary">Return Home</button>
+        </a>
+        <a href="/blogposts/new">
+          <button class="btn btn-secondary">Create Another Blog Post</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- These go right before our closing body tag -->
+  <script src="../../webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="../../webjars/jquery/1.9.1/jquery.min.js"></script>
+</body>
+
+</html>
